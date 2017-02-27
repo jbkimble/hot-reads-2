@@ -1,1 +1,8 @@
-<h1>Welcome To HotReadzzz</h1>
+<h1> Welcome To HotReadzzz </h1>
+<h3> Top 10 Most Read URL's In Last 24 Hours </h3>
+
+<% @urls.each do |url, count| %>
+  Rank: <%= @count += 1 %> <br>
+  Url: <%= url %> <br>
+  Read: <%= count %> times <br> <br> <br>
+<% end %>
