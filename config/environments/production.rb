@@ -3,6 +3,7 @@ Rails.application.configure do
 
   #added for cors purposes
   config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+  end
   config.serve_static_assets = true
 
   # Code is not reloaded between requests.
