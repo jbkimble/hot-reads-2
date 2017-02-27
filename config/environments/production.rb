@@ -1,11 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  #added for cors purposes
-  config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
-  end
-  config.serve_static_assets = true
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
