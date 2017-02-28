@@ -3,7 +3,7 @@ class Api::V1::UrlsController < ApplicationController
 
   def create
     puts params.inspect
-    url = Url.new(url: url_params)
+    url = Url.new(url: url_params["url"])
     if url.save
       render json: url, :only => [:id, :url]
     else
