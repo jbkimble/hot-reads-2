@@ -1,8 +1,8 @@
 <h1> Welcome To HotReadzzz </h1>
 <h3> Top 10 Most Read URL's In Last 24 Hours </h3>
 
-<% @urls.each do |url, count| %>
+<% @urls.each do |url| %>
   Rank: <%= @count += 1 %> <br>
-  Url: <%= url %> <br>
-  Read: <%= count %> times <br> <br> <br>
+  Url: <%= url[0] %> <br>
+  Read: <%= url[1] %> times <br> <br> <br>
 <% end %>
