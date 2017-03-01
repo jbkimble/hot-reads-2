@@ -1,24 +1,15 @@
-# README
+# HotReads
+This is an application for the Turing School of Software and Design.  It makes and api call to URL lock box and displays business intelligence.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Funcitonality
+This app displays the most read urls over the last 24 hours on the application URL Lock Box
+This app must run in sync with [url_lock_box](https://github.com/jbkimble/temp-mid-mod)
+# Setup
+```
+  $ git clone [repo]
+  $ cd [project name]
+  $ bundle
+  $ rake db:create db:migrate db:seed
+  $ rails s -p 8080  <-starts server
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
